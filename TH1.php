@@ -6,7 +6,6 @@ $password = "";
 $dbname = "test";
 
 
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Kiểm tra kết nối
@@ -86,5 +85,8 @@ $conn->close();
             </tr>
         <?php endwhile; ?>
     </table>
+        <a href="login.htm" style="margin: 15px;">
+            <input type="submit" value="Đăng xuất">
+        </a>
 </body>
 </html>

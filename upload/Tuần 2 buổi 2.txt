@@ -1,0 +1,203 @@
+
+* BT Kiểm thử giá trị biên cho hệ thống đăng ký khóa học trực tuyến
+I, KIỂM THỬ GIÁ TRỊ BIÊN
+1. Phân tích yêu cầu
+- Số khóa học đăng ký từ 1-5 khóa học
+- Tuổi của học viên từ 18-60 tuổi
+- Mã số học viên là 6 chữ số
+2. Xác định giá trị biên
+- Số khóa học:
+	+ Giá trị biên thấp nhất: 1
+	+ Giá trị biên cao nhất: 5
+- Số tuổi của học viên:
+	+ Giá trị biên thấp nhất: 18
+	+ Giá trị biên cao nhất: 60
+- Mã số của học viên:
+	+ Giá trị biên: 6
+3. Xác định các giá trị kiểm thử
+- Số khóa học:
+	+ Giá trị biên bình thường 
+		., Giá trị thấp hơn giới hạn thấp nhất: 0
+		., Giá trị cao hơn giới hạn thấp nhất: 2
+		., Giá trị thấp hơn giới hạn cao nhất: 4
+		., Giá trị cao hơn giới hạn cao nhất: 6
+	+ Giá trị biên mạnh mẽ
+		., Giá trị: -1
+		., Giá trị: 3
+		., Giá trị: 8
+	+ Giá trị biên trường hợp xấu nhất
+		., Nhập đồng thời các giá trị: 0, 2, 4, 6
+	+ Giá trị đặc biệt
+		., Giá trị NULL
+		., Giá trị 99999
+		., Giá trị -9999
+		., Giá trị 2,5
+		., Giá trị Space
+- Số tuổi học viên
+	+ Giá trị biên bình thường 
+		., Giá trị thấp hơn giới hạn thấp nhất: 17
+		., Giá trị cao hơn giới hạn thấp nhất: 19
+		., Giá trị thấp hơn giới hạn cao nhất: 59
+		., Giá trị cao hơn giới hạn cao nhất: 61
+	+ Giá trị biên mạnh mẽ
+		., Giá trị: 0
+		., Giá trị: 30
+		., Giá trị: 100
+	+ Giá trị biên trường hợp xấu nhất
+		., Nhập đồng thời các giá trị: 17, 19, 59, 61
+	+ Giá trị đặc biệt
+		., Giá trị NULL
+		., Giá trị 200
+		., Giá trị -1
+		., Giá trị 20,5
+		., Giá trị Space
+- Mã số học viên
+	+ Giá trị biên bình thường 
+		., Giá trị thấp hơn giới hạn thấp nhất: 5 số 
+		., Giá trị cao hơn giới hạn cao nhất: 7 số
+	+ Giá trị biên mạnh mẽ
+		., Giá trị: 0 số
+		., Giá trị: 6 số
+		., Giá trị: 100 số
+	+ Giá trị biên trường hợp xấu nhất
+		., Nhập đồng thời các giá trị 5, 7
+	+ Giá trị đặc biệt
+		., Giá trị NULL
+		., Giá trị 000000
+		., Giá trị 999999
+		., Giá trị 000001
+		., Giá trị -999999
+		., Giá trị ABCDEF
+		., Giá trị SpaceII,KIỂM THỬ MỞ RỘNG
+1. Phân tích mở rộng
+- Nhập giá trị điều kiện:
+	+ Thoả mãn số khóa học, không thỏa mãn số tuổi và mã học viên (TH1)
+	+ Thoản mãn số tuổi, không thỏa mãn số khóa học và mã học viên (TH2)
+	+ Thoản mãn mã học viên, không thỏa mãn số khóa học và số tuổi (TH3)
+	+ Không thỏa mãn số khóa học, số tuổi và mã học viên (TH4)
+- Số lượng khóa học:
+	+ Số khóa học tối đa có thể đăng ký trong 1 năm ( giả sử 15 khóa)
+- Số tuổi học viên:
+	+ Số học viên 60 tuổi tối đa có thể đăng ký trong 1 khóa học ( giả sử 10 người)
+- Mã số học viên:(mỗi mã số tương ứng với 1 học viên)
+	+ Số học viên tối đa trong 1 khóa học ( giả sử 100 người)
+2. Xác định giá trị biên mở rộng: 
+- Số lượng khóa học:
+	+ Tổng khóa học trong năm không vượt quá: 15
+- Số tuổi học viên:
+	+ Tổng số học viên 60 tuổi trong 1 khóa học không vượt quá: 10
+- Mã số học viên::
+	+ Tổng số học viên trong 1 khóa học không quá: 100
+3. Xác định giá trị kiểm thử mở rộng:
+- TH1: 
+	+ Giá trị số khóa học: 2
+	+ Giá trị số tuổi học viên: 15
+	+ Giá trị mã số học viên: 12345
+- TH2: 
+	+ Giá trị số khóa học: 6
+	+ Giá trị số tuổi học viên: 20
+	+ Giá trị mã số học viên: 12345
+- TH3: 
+	+ Giá trị số khóa học: 6
+	+ Giá trị số tuổi học viên: 155
+	+ Giá trị mã số học viên: 123456
+- TH4: 
+	+ Giá trị số khóa học: 6
+	+ Giá trị số tuổi học viên: 155
+	+ Giá trị mã số học viên: 1234567
+- Tổng khóa học/năm không quá: 15
+- Tổng số học viên 60 tuổi/khóa không quá: 10
+- Tổng học viên/khóa không quá: 100
+
+
+III, BÁO CÁO
+- Mô tả: 
+	+ Số khóa học: Mục đích nhằm xác định nhập dữ liệu thành công với giá trị hợp lệ và các giá trị tối đa, 
+tối thiểu, cực đại, cực tiêu cho số lượng khóa học bao gồm cả các giá trị đặc biệt
+	+ Số tuổi học viên: Mục đích nhằm xác định nhập dữ liệu thành công với giá trị hợp lệ và các giá trị tối đa, 
+tối thiểu cho số tuổi học viên học bao gồm cả người già, trẻ em và các giá trị đặc biệt
+	+ Mã số học viên: Mục đích nhằm xác định nhập dữ liệu thành công với giá trị hợp lệ và xem dài tối đa của mã 
+học viên và các quy định đặc biệt
+- Kết quả mong đợi:
+	+ Số khóa học: 
+		., Với các giá trị biên trong khoảng từ 1-5: Hợp lệ, Cho phép nhập
+		., Với các giá trị biên ngoài khoảng: Không hợp lệ, không cho phép nhập
+		., Với các giá trị xấu: Không hợp lệ, không cho phép nhập
+		., Với các giá trị đặc biệt: Không hợp lệ, không cho phép nhập
+		., Với các giá trị mở rộng: Không hợp lệ, không cho phép nhập (Vì các trường hợp mở rộng không được mô tả trong bài
+										 toán nên ở đây mặc định là không hợp lệ)
+	+ Số tuổi học viên: 
+		., Với các giá trị biên trong khoảng từ 18-60: Hợp lệ, Cho phép nhập
+		., Với các giá trị biên ngoài khoảng: Không hợp lệ, không cho phép nhập
+		., Với các giá trị xấu: Không hợp lệ, không cho phép nhập
+		., Với các giá trị đặc biệt: Không hợp lệ, không cho phép nhập
+		., Với các giá trị mở rộng: Không hợp lệ, không cho phép nhập
+	+ Mã số học viên: 
+		., Với các giá trị là 6 chữ số: Hợp lệ, Cho phép nhập
+		., Với các giá trị biên ngoài 6 chữ số: Không hợp lệ, không cho phép nhập
+		., Với các giá trị xấu: Không hợp lệ, không cho phép nhập
+		., Với các giá trị đặc biệt: Không hợp lệ, không cho phép nhập
+		., Với các giá trị mở rộng: Không hợp lệ, không cho phép nhập
+- Kết quả thực tế:
+ 	+ Số khóa học: Cho phép nhập tất cả các trường hợp nhưng khi lưu thì chỉ chấp nhận những trường hợp với dữ liệu hợp lệ. Ngoài ra các 
+trường hợp còn lại khi lưu sẽ hiển thị thông báo lỗi dưới trường dữ liệu.
+	+ Số tuổi học viên: Cho phép nhập tất cả các trường hợp nhưng khi lưu thì chỉ chấp nhận những trường hợp với dữ liệu hợp lệ. Ngoài ra các 
+trường hợp còn lại khi lưu sẽ hiển thị thông báo lỗi dưới trường dữ liệu.
+	+ Mã số học viên: Cho phép nhập tất cả các trường hợp nhưng khi lưu thì chỉ chấp nhận những trường hợp với dữ liệu hợp lệ. Ngoài ra các 
+trường hợp còn lại khi lưu sẽ hiển thị thông báo lỗi dưới trường dữ liệu.
+
+*Code kiểm thử (Chạy chương trình trên google colab)
+!pip install ipywidgets
+
+import ipywidgets as widgets
+from IPython.display import display
+
+def luu_thong_tin(b):
+    # Lấy giá trị từ các trường nhập
+    so_khoa_hoc = int(entry_so_khoa_hoc.value)
+    tuoi_hoc_vien = int(entry_tuoi_hoc_vien.value)
+    ma_hoc_vien = entry_ma_hoc_vien.value
+
+    # Kiểm tra điều kiện
+    loi = False
+    thong_bao_loi = ""
+
+    if so_khoa_hoc < 1 or so_khoa_hoc > 5:
+        loi = True
+        thong_bao_loi += "Số khóa học phải từ 1 đến 5.\n"
+
+    if tuoi_hoc_vien < 18 or tuoi_hoc_vien > 60:
+        loi = True
+        thong_bao_loi += "Tuổi học viên phải từ 18 đến 60.\n"
+
+    if len(ma_hoc_vien) != 6 or not ma_hoc_vien.isdigit():
+        loi = True
+        thong_bao_loi += "Mã học viên phải gồm 6 chữ số.\n"
+
+    # Hiển thị thông báo kết quả
+    if loi:
+        print("Lỗi:")
+        print(thong_bao_loi)
+    else:
+        print("Thành công: Thông tin đã được lưu.")
+
+# Tạo các widget
+label_so_khoa_hoc = widgets.Label(value="Nhập số khóa học:")
+entry_so_khoa_hoc = widgets.IntText()
+label_tuoi_hoc_vien = widgets.Label(value="Nhập tuổi học viên:")
+entry_tuoi_hoc_vien = widgets.IntText()
+label_ma_hoc_vien = widgets.Label(value="Nhập mã học viên:")
+entry_ma_hoc_vien = widgets.Text()
+
+# Tạo nút lưu
+button_luu = widgets.Button(description="Lưu")
+
+# Thiết lập hành động khi nhấn nút lưu
+button_luu.on_click(luu_thong_tin)
+
+# Hiển thị các widget
+display(label_so_khoa_hoc, entry_so_khoa_hoc)
+display(label_tuoi_hoc_vien, entry_tuoi_hoc_vien)
+display(label_ma_hoc_vien, entry_ma_hoc_vien)
+display(button_luu)
+

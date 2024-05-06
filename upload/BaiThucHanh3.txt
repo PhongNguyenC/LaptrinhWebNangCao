@@ -1,0 +1,92 @@
+
+Bài 1:
+#include <iostream>
+
+double calculateElectricityCost(double kWh_usage) {
+    double total_cost = 0.0;
+    
+    if (kWh_usage <= 50) {
+        total_cost = kWh_usage * 1.678;
+    } else if (kWh_usage <= 100) {
+        total_cost = 50 * 1.678 + (kWh_usage - 50) * 1.734;
+    } else if (kWh_usage <= 200) {
+        total_cost = 50 * 1.678 + 50 * 1.734 + (kWh_usage - 100) * 2.014;
+    } else if (kWh_usage <= 300) {
+        total_cost = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + (kWh_usage - 200) * 2.536;
+    } else if (kWh_usage <= 400) {
+        total_cost = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + (kWh_usage - 300) * 2.834;
+    } else {
+        total_cost = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + 100 * 2.834 + (kWh_usage - 400) * 2.927;
+    }
+    
+    // Add VAT (10%)
+    total_cost *= 1.1;
+    
+    return total_cost;
+}
+
+int main() {
+    double kWh_usage;
+    std::cout << "Nhập số kWh sử dụng trong tháng: ";
+    std::cin >> kWh_usage;
+    double total_cost = calculateElectricityCost(kWh_usage);
+    std::cout << "Tổng tiền phải trả: " << total_cost << " đồng" << std::endl;
+    return 0;
+}
+
+Bài 2:
+* Kiểm thử yếu
+- Ca kiểm thử 1:
+	+ Đầu vào: 0 Số điện 
+	+ Kết quả mong đợi: Tổng tiền phải đóng là 0 đồng
+- Ca kiểm thử 2:
+	+ Đầu vào: 1 Số điện 
+	+ Kết quả mong đợi: Tổng tiền phải đóng là 1.8458 đồng
+- Ca kiểm thử 3:
+	+ Đầu vào: 49 Số điện 
+	+ Kết quả mong đợi: Tổng tiền phải đóng là 81.8182 đồng
+* Kiểm thử mạnh
+- Ca kiểm thử 1:
+	+ Đầu vào: 50 Số điện 
+	+ Kết quả mong đợi: Tổng tiền phải đóng là 83.900 đồng
+- Ca kiểm thử 2:
+	+ Đầu vào: 100 Số điện 
+	+ Kết quả mong đợi: Tổng tiền phải đóng là 170.780 đồng
+- Ca kiểm thử 3:
+	+ Đầu vào: 500 Số điện 
+	+ Kết quả mong đợi: Tổng tiền phải đóng là 847.200 đồng
+
+* Kiểm thử truyền thống
+- Ca kiểm thử 1:
+	+ Đầu vào: 600 Số điện 
+	+ Kết quả mong đợi: kết quả không xác định
+- Ca kiểm thử 2:
+	+ Đầu vào: -1 Số điện 
+	+ Kết quả mong đợi: Kết quả không xác định
+
+Bài 3:
+#include <gtest/gtest.h>
+#include "myfunctions.h"
+
+TEST(myfunctions, test0)
+{
+    GTEST_ASSERT_EQ(tinhTienDien(0), 0);
+}
+
+TEST(myfunctions, test375)
+{
+    GTEST_ASSERT_EQ(tinhTienDien(375), 921);
+}
+
+TEST(myfunctions, test1000)
+{
+    GTEST_ASSERT_EQ(tinhTienDien(1000), 2931);
+}
+
+
+
+int main(int argc, char* argv[])
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
