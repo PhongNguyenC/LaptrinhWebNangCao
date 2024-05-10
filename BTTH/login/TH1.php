@@ -42,7 +42,7 @@ $conn->close();
 </head>
 <body>
     <h1>Tìm sách</h1>
-        <form action="index.php" Method="GET" >
+        <form action="TH1.php" Method="GET" >
             Từ khóa : <input type="text" name="txtTukhoa"/>
             <input type="submit" value="Tìm"/>
         </form>
@@ -88,5 +88,6 @@ $conn->close();
         <a href="login.htm" style="margin: 15px;">
             <input type="submit" value="Đăng xuất">
         </a>
+    
 </body>
 </html>
