@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('password_resets', function (Blueprint $table) {
-            $table->id(); // This will add an auto-incrementing primary key column named 'id'
-            $table->string('email')->index();
+            $table->string('email')->primary();
             $table->string('token');
             $table->timestamp('created_at')->nullable();
         });
@@ -31,6 +30,3 @@ return new class extends Migration
         Schema::dropIfExists('password_resets');
     }
 };
-
-
-
