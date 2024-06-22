@@ -3,7 +3,7 @@
 @section('style')
 @stop
 @section('content')
-    <div class="hero-wrap js-fullheight" style="background-image: url({{ asset('page/images/bg_5.jpg') }});">
+    <div class="hero-wrap js-fullheight" style="background-image: url({{ asset('page/images/destination-1.jpg') }});">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
@@ -115,7 +115,7 @@
             </div>
         </div>
         <div class="container container-2">
-            <div class="row">
+            <div class="row" style="margin-left: -180px;">
                 <div class="col-md-12">
                     <div class="carousel-destination owl-carousel ftco-animate">
                         @if ($locations->count() > 0)
