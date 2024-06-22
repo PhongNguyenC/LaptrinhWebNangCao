@@ -6,7 +6,7 @@
                     <h2 class="ftco-heading-2">Giới thiệu</h2>
                     <p>Website Travel Tour cho phép đặt các tour du lịch trong vào ngoài nước.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                        <li class="ftco-animate"><a href="https://www.facebook.com/nguyenkkhanhtv"><span class="fa fa-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.facebook.com/"><span class="fa fa-facebook"></span></a></li>
                         <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a></li>
                     </ul>
                 </div>
