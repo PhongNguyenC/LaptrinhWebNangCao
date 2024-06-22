@@ -26,7 +26,7 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                         <h3 class="mb-2">Địa chỉ</h3>
-                        <p> Quận Bình Thạnh, TPHCM</p>
+                        <p> Đại học Phenikaa</p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -74,7 +74,7 @@
                 <div class="col-md-12 text-center">
                     <div class="img" style="background-image: url({{ asset('page/images/bg_2.jpg') }});">
                         <div class="overlay"></div>
-                        <h2>Chào mừng bạn đến với Fun Travel</h2>
+                        <h2>Chào mừng bạn đến với Travel Tour</h2>
                         <p>Chúng tôi sẽ đem đến trãi nghiệm các tour du lịch tốt nhất dành cho bạn</p>
                         <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Liên hệ qua Messager của chúng tôi</a></p>
                     </div>

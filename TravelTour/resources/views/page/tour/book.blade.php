@@ -25,7 +25,7 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                         <h3 class="mb-2">Địa chỉ</h3>
-                        <p>525 Điện Biên Phủ,Bình Thạnh,TPHCM</p>
+                        <p>Đại học Phenikaa</p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -34,7 +34,7 @@
                             <span class="fa fa-phone"></span>
                         </div>
                         <h3 class="mb-2">Số điện thoại liên hệ</h3>
-                        <p><a href="tel://1234567920">0343754517</a></p>
+                        <p><a href="tel://1234567920">0965261897</a></p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -152,8 +152,8 @@
                         <p>Số người tham gia : {{ $tour->t_number_guests }}</p>
                         <p>Đã đăng ký : {{ $tour->t_number_registered }}</p>
                         <div class="phoneWrap">
-                            <div class="hotline">0909.189.888</div>
-                            <div class="hotline">0903.933.788</div>
+                            <div class="hotline">0965.261.897</div>
+                            <div class="hotline">0965.258.412</div>
                         </div>
                     </div>
                     <div class="col-md-12">

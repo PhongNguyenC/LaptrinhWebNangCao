@@ -1,5 +1,5 @@
 @extends('page.layouts.page')
-@section('title', 'Cuộc đời là những chuyến đi | Fun Travel')
+@section('title', 'Cuộc đời là những chuyến đi | Travel Tour')
 @section('style')
 @stop
 @section('content')
@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
                 <div class="col-md-7 ftco-animate">
-                    <span class="subheading">Welcome to Fun Travel</span>
+                    <span class="subheading">Welcome to Travel Tour</span>
                     <h1 class="mb-4">Khám phá địa điểm yêu thích của bạn với chúng tôi</h1>
                     <p class="caps">Du lịch đến bất kỳ nơi nào bạn chỉ cần liên hệ với chúng tôi</p>
                 </div>
@@ -54,10 +54,10 @@
             <div class="row d-flex">
                 <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
                     <div class="w-100">
-                        <span class="subheading">Welcome to Fun Travel</span>
+                        <span class="subheading">Welcome to Travel Tour</span>
                         <h2 class="mb-4">Đã đến lúc bắt đầu cuộc phiêu lưu của bạn</h2>
                         <p>Xách balo lên vào đi với chúng tôi, bạn sẽ có được những trãi nghiệm tuyệt vời với dịch vụ của chúng tôi!</p>
-                        <p>Các bạn hãy tìm đến với Fun Travel để được đi đến bất cứ nơi nào trên thế giới. Dành cho người có niềm đam mê bất tận với du lịch!</p>
+                        <p>Các bạn hãy tìm đến với Travel Tour để được đi đến bất cứ nơi nào trên thế giới. Dành cho người có niềm đam mê bất tận với du lịch!</p>
                     
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
                                 <div class="media-body">
                                     <h3 class="heading mb-3">Quản lý vị trí</h3>
-                                    <p>Các bạn hãy tìm đến với Fun Travel để được đi đến bất cứ nơi nào trên thế giới. Dành cho người có niềm đam mê bất tận với du lịch!</p>
+                                    <p>Các bạn hãy tìm đến với Travel Tour để được đi đến bất cứ nơi nào trên thế giới. Dành cho người có niềm đam mê bất tận với du lịch!</p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                 <div class="col-md-12 text-center">
                     <div class="img"  style="background-image: url({{ asset('page/images/bg_2.jpg') }});">
                         <div class="overlay"></div>
-                        <h2>Chúng tôi là Công ty Du lịch Fun Travel</h2>
+                        <h2>Chúng tôi là Công ty Du lịch Travel Tour</h2>
                         <p>Chúng tôi sẽ mang đến cho quý khách những trãi nghiệm tuyệt vời nhất</p>
                         <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Liên hệ qua Messager của chúng tôi</a></p>
                     </div>

@@ -4,7 +4,7 @@
             <div class="col-md pt-5">
                 <div class="ftco-footer-widget pt-md-5 mb-4">
                     <h2 class="ftco-heading-2">Giới thiệu</h2>
-                    <p>Website Fun Travel cho phép đặt các tour du lịch trong vào ngoài nước.</p>
+                    <p>Website Travel Tour cho phép đặt các tour du lịch trong vào ngoài nước.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                         <li class="ftco-animate"><a href="https://www.facebook.com/nguyenkkhanhtv"><span class="fa fa-facebook"></span></a></li>
                         <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a></li>
@@ -42,7 +42,7 @@
                     <h2 class="ftco-heading-2">Thông tin liện hệ</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map-marker"></span><span class="text"> Điện Biên Phủ, phường 25, Quận Bình Thạnh, TPHCM</span></li>
+                            <li><span class="icon fa fa-map-marker"></span><span class="text"> Đại học Phenikaa</span></li>
                             <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">0123456789</span></a></li>
                             <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">admin@gmail.com</span></a></li>
                         </ul>
